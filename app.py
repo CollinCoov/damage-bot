@@ -1,11 +1,11 @@
 from discord.ext import commands
 import discord
 import requests
-import secret as s
 
-BOT_TOKEN = s.bot_token
-api_key = s.api_key
-CHANNEL_ID = 157290402775302145
+
+BOT_TOKEN = secrets.BOT_TOKEN
+api_key = secrets.RIOT_API
+CHANNEL_ID = secrets.CHANNEL_ID
 
 def get_damage(name):
         
