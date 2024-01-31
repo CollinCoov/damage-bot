@@ -1,9 +1,10 @@
 from discord.ext import commands
 import discord
 import requests
+import secret as s
 
-BOT_TOKEN = 'MTE5Njk0NTY1NzM5MTQ4NTAyMA.G3za78.r6FJcrzpV194AawrociGwgAKADJRH9Y-6OLn-g'
-api_key = 'RGAPI-f4415143-a47f-43bf-a083-5a2d2e6e8f1f'
+BOT_TOKEN = s.bot_token
+api_key = s.api_key
 CHANNEL_ID = 157290402775302145
 
 def get_damage(name):
