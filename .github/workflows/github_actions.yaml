@@ -1,4 +1,9 @@
 name: GitHub Actions Demo
+env:
+  RIOT_API: ${{ secrets.RIOT_API }}
+  BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
+  CHANNEL_ID: ${{ secrets.CHANNEL_ID }}
+
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
