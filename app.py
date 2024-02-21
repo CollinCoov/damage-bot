@@ -189,10 +189,18 @@ def get_stats(name):
     average_assists = total_assists/len(match_response)
     avgcc = average_cc/len(match_response)
     avgdmg = average_damage/len(match_response)
+
+    # Is Javed?
+    Javed = ''
+    if summoner == 'Gubbs Girl' and avgdmg < 25000:
+        Javed += '\nMAYBE TRY A DIFFERENT GAME: https://www.slots.lv/'
+    if summoner == 'Gubbs Girl' and avgdmg >= 25000:
+        Javed += '\nGOOD JOB BUD, HAVE A TREAT: https://www.reddit.com/r/FoodInButt/comments/14h8rcj/girl_shitting_out_hot_dogs_beautiful_dinner/'
+
     if avgdmg < 25000:
-        outputstring =  f"\n{summoner}'s PAST 20 GAMES STATS\nKDA: {average_kills}/{average_deaths}/{average_assists}\nDAMAGE: {avgdmg}\nTIME CC'ING ENEMIES: {avgcc} SECONDS\n****NOOB ALERT****"
+        outputstring =  f"\n{summoner}'s PAST 20 GAMES STATS\nKDA: {average_kills}/{average_deaths}/{average_assists}\nDAMAGE: {avgdmg}\nTIME CC'ING ENEMIES: {avgcc} SECONDS\n****NOOB ALERT****{Javed}"
     else:
-        outputstring =  f"\n{summoner}'s PAST 20 GAMES STATS\nKDA: {average_kills}/{average_deaths}/{average_assists}\nDAMAGE: {avgdmg}\nTIME CC'ING ENEMIES: {avgcc} SECONDS"
+        outputstring =  f"\n{summoner}'s PAST 20 GAMES STATS\nKDA: {average_kills}/{average_deaths}/{average_assists}\nDAMAGE: {avgdmg}\nTIME CC'ING ENEMIES: {avgcc} SECONDS{Javed}"
 
 
     return outputstring
