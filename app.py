@@ -6,9 +6,9 @@ import os
 
 load_dotenv()
 
-BOT_TOKEN = os.getenv("CHANNEL_ID")
+BOT_TOKEN = os.getenv("DISCORD_KEY")
 api_key = os.getenv("RIOT_API")
-CHANNEL_ID = os.getenv("DISCORD_KEY")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
 
 def get_damage(name):
         
