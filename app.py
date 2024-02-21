@@ -1,12 +1,13 @@
 from discord.ext import commands
 import discord
 import requests
-import secret
+from dotenv import load_dotenv
 
+load_dotenv()
 
-BOT_TOKEN = secret.get_secret_version('849442935668', 'DISCORD_TOKEN', '1')
-api_key = secret.get_secret_version('849442935668', 'RIOT_API', '1')
-CHANNEL_ID = secret.get_secret_version('849442935668', 'CHANNEL_ID', '1')
+BOT_TOKEN = os.getenv("CHANNEL_ID")
+api_key = os.getenv("RIOT_API")
+CHANNEL_ID = os.getenv("DISCORD_KEY")
 
 def get_damage(name):
         
